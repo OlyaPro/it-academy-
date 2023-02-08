@@ -6,13 +6,13 @@ function rollDice() {
   let rand4 = Math.floor(Math.random() * 6 + 1);
   let rand5 = Math.floor(Math.random() * 6 + 1);
   let rand6 = Math.floor(Math.random() * 6 + 1);
-  whoWon(rand1, rand2, rand3, rand4, rand5, rand6);
+  let finalScore=whoWon(rand1, rand2, rand3, rand4, rand5, rand6);
 }
 rollDice();
 function whoWon(rand1, rand2, rand3, rand4, rand5, rand6) {
   let player1 = rand1 + rand3 + rand5;
   let player2 = rand2 + rand4 + rand6;
-  winner(player1, player2);
+  let result=winner(player1, player2);
 }
 function winner(player1, player2) {
   if (player1 === player2) {
@@ -25,7 +25,7 @@ function winner(player1, player2) {
 }
 
 //Task 2
-const date = new Date();
+
 let counter = 0;
 let numOfMonth = 279;
 let day = 13;
