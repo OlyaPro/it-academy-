@@ -1,12 +1,12 @@
 // Task 1
 let start=rollDice();
 function rollDice() {
-  let rand1 = Math.floor(Math.random() * (6-1) + 1);
-  let rand2 = Math.floor(Math.random() * (6-1) + 1);
-  let rand3 = Math.floor(Math.random() * (6-1) + 1);
-  let rand4 = Math.floor(Math.random() * (6-1) + 1);
-  let rand5 = Math.floor(Math.random() * (6-1) + 1);
-  let rand6 = Math.floor(Math.random() * (6-1) + 1);
+  let rand1 = Math.floor(Math.random() * (6-1+1) + 1);
+  let rand2 = Math.floor(Math.random() * (6-1+1) + 1);
+  let rand3 = Math.floor(Math.random() * (6-1+1) + 1);
+  let rand4 = Math.floor(Math.random() * (6-1+1) + 1);
+  let rand5 = Math.floor(Math.random() * (6-1-1) + 1);
+  let rand6 = Math.floor(Math.random() * (6-1+1) + 1);
   let finalScore=whoWon(rand1, rand2, rand3, rand4, rand5, rand6);
 }
 function whoWon(rand1, rand2, rand3, rand4, rand5, rand6) {
