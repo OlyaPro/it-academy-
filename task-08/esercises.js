@@ -1,19 +1,19 @@
 //task 1
 let arrayNumber = [1, 2, 3, 4, 5, 6];
 
-function arrayReverse(arrayNumber) {
+function getArrayReverse(arrayNumber) {
   return arrayNumber.reverse();
 }
 
 //task 2
 let arrayNum = [3, 67, 15, 70, 100];
 
-function arrayMax(arrayNum) {
+function getArrayMax(arrayNum) {
   return arrayNum.sort((a, b) => b - a)[0];
 }
 
 //task 3
-function ArrayFibonachi(m) {
+function getArrayFibonachi(m) {
   var n = [0, 1];
 
   if (m <= 2) {
