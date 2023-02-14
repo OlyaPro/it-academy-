@@ -1,20 +1,16 @@
 // Task 1
-let start=rollDice();
 function rollDice() {
-  let rand1 = Math.floor(Math.random() * (6-1+1) + 1);
-  let rand2 = Math.floor(Math.random() * (6-1+1) + 1);
-  let rand3 = Math.floor(Math.random() * (6-1+1) + 1);
-  let rand4 = Math.floor(Math.random() * (6-1+1) + 1);
-  let rand5 = Math.floor(Math.random() * (6-1-1) + 1);
-  let rand6 = Math.floor(Math.random() * (6-1+1) + 1);
-  let finalScore=whoWon(rand1, rand2, rand3, rand4, rand5, rand6);
+  return Math.floor(Math.random() * (6+1-1) + 1;
 }
-function whoWon(rand1, rand2, rand3, rand4, rand5, rand6) {
-  let player1 = rand1 + rand3 + rand5;
-  let player2 = rand2 + rand4 + rand6;
-  let result=winner(player1, player2);
-}
-function winner(player1, player2) {
+
+function playGame() {
+  let player1 = 0;
+  let player2 = 0;
+
+  for (let i = 0; i < 3; i++) {
+    player1 += rollDice();
+    player2 += rollDice();
+  }
   if (player1 === player2) {
     console.log("Draw!");
   } else if (player1 < player2) {
@@ -23,7 +19,7 @@ function winner(player1, player2) {
     console.log("Player1 Winner!");
   }
 }
-
+playGame();
 //Task 2
 
 let counter = 0;
