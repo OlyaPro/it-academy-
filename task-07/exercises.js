@@ -1,6 +1,6 @@
 // Task 1
 function rollDice() {
-  return Math.floor(Math.random() * (6+1-1) + 1;
+  return Math.floor(Math.random() * (6-1+1) + 1;
 }
 
 function playGame() {
