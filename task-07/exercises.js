@@ -32,8 +32,8 @@ function getcountFriday13th(startDate, endDate) {
   }
   return count;
 }
-const startDate = new Date(2000, 0, 1); // January 1, 2000
-const endDate = new Date(); // Today
+const startDate = new Date(2000, 0, 1); 
+const endDate = new Date(); 
 
 const count = getcountFriday13th(startDate, endDate);
 console.log(count);
