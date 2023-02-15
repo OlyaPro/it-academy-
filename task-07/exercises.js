@@ -21,19 +21,22 @@ function playGame() {
 }
 playGame();
 //Task 2
-
-let counter = 0;
-let numOfMonth = 279;
-let day = 13;
-function numberOfFriday13(year) {
-  for (var month = 0; month < numOfMonth; month++) {
-    let numDay = new Date(year, month, day);
-    if (numDay.getDay() === 5) {
-      counter++;
+function getcountFriday13th(startDate, endDate) {
+  let count = 0;
+  let currentDate = startDate;
+  while (currentDate <= endDate) {
+    if (currentDate.getDay() === 5 && currentDate.getDate() === 13) {
+      count++;
     }
+    currentDate.setDate(currentDate.getDate() + 1);
   }
-  return counter;
+  return count;
 }
+const startDate = new Date(2000, 0, 1); // January 1, 2000
+const endDate = new Date(); // Today
+
+const count = getcountFriday13th(startDate, endDate);
+console.log(count);
 
 //Task 3 (integer)
 const integer = 20;
