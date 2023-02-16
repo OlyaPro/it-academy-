@@ -15,11 +15,11 @@ function getArrayMax(arrayNum) {
 //task 3
 function getFibonachiArr(n, m) {
   let fibonacci = [0, 1];
-
-  for (let i = 2; i < n + m; i++) {
+  let length = n + m;
+  for (let i = 2; i < length; i++) {
     fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
   }
-  let result = fibonacci.slice(n, n + m);
+  let result = fibonacci.slice(n, length);
   console.log(result);
 }
 
