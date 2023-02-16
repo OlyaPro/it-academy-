@@ -13,17 +13,14 @@ function getArrayMax(arrayNum) {
 }
 
 //task 3
-function getArrayFibonachi(longArr) {
-  var numbers = [0, 1];
+function getFibonachiArr(n, m) {
+  let fibonacci = [0, 1];
 
-  if (longArr <= 2) {
-    var result = numbers.slice(0, m);
-  } else {
-    for (i = 0; i < longArr - 2; i++) {
-      numbers.push(numbers[numbers.length - 1] + numbers[numbers.length - 2]);
-    }
-    return numbers;
+  for (let i = 2; i < n + m; i++) {
+    fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
   }
+  let result = fibonacci.slice(n, n + m);
+  console.log(result);
 }
 
 //task 4
