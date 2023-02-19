@@ -24,8 +24,9 @@ function getFibonachiArr(n, m) {
 }
 
 //task 4
-let numberOne = 3487;
-let numberTwo = 3794;
+function getMatchNum(one, two) {
+  let numberOne=one;
+  let numberTwo=two;
 counter = 0;
 counter1 = 0;
 
