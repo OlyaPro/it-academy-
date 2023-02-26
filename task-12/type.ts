@@ -104,7 +104,7 @@ export class ObjectManipulator implements ObjectManipulatorInterface {
  * @param {Array} input
  * @return {Array | Function}
  */
-export function map(mapper: Function, input: any): Function {
+export function map(mapper: number[], input: any): Function {
     if (arguments.length === 0) {
         return map;
     }
