@@ -104,12 +104,12 @@ export class ObjectManipulator implements ObjectManipulatorInterface {
  * @param {Array} input
  * @return {Array | Function}
  */
-export function map(mapper: Function, input: any): Function {
+export function map<T>(mapper: Function, input: any): Array<T> | Function {
     if (arguments.length === 0) {
         return map;
     }
     if (arguments.length === 1) {
-        return function subFunction(subInput: any): Function {
+        return function subFunction<T>(subInput: any): Array<T> | Function {
             if (arguments.length === 0) {
                 return subFunction;
             }
