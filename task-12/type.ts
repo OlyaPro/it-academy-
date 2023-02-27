@@ -104,12 +104,12 @@ export class ObjectManipulator implements ObjectManipulatorInterface {
  * @param {Array} input
  * @return {Array | Function}
  */
-export function map(mapper: number[], input: any): typeof map {
+export function map(mapper: Function, input: any): Function {
     if (arguments.length === 0) {
         return map;
     }
     if (arguments.length === 1) {
-        return function subFunction(subInput: any): typeof map {
+        return function subFunction(subInput: any): Function {
             if (arguments.length === 0) {
                 return subFunction;
             }
@@ -135,12 +135,12 @@ export function map(mapper: number[], input: any): typeof map {
  * @param {Array} input
  * @return {Array | Function}
  */
-export function filter(filterer: number, input:any): typeof filter {
+export function filter(filterer: number, input:any): Function {
     if (arguments.length === 0) {
         return filter;
     }
     if (arguments.length === 1) {
-        return function subFunction(subInput: any): typeof filter {
+        return function subFunction(subInput: any): Function {
             if (arguments.length === 0) {
                 return subFunction;
             }
