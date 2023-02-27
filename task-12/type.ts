@@ -135,12 +135,12 @@ export function map<T>(mapper: Function, input: any): Array<T> | Function {
  * @param {Array} input
  * @return {Array | Function}
  */
-export function filter(filterer: number, input:any): Function {
+export function filter<T>(filterer: number, input:any): Array<T> | Function {
     if (arguments.length === 0) {
         return filter;
     }
     if (arguments.length === 1) {
-        return function subFunction(subInput: any): Function {
+        return function subFunction<T>(subInput: any): Array<T> | Function {
             if (arguments.length === 0) {
                 return subFunction;
             }
