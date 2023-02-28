@@ -70,21 +70,21 @@ export class ObjectManipulator implements ObjectManipulatorInterface {
 
     constructor(protected obj) { }
 
-    public set(key: string, value: string | number): ObjectManipulator {
+    public set(key, value) {
         return new ObjectManipulator({ ...this.obj, [key]: value });
     }
 
-    public get(key: string): string {
+    public get(key) {
         return this.obj[key];
     }
 
-    public delete(key: string): ObjectManipulator{
+    public delete(key){
         const newObj = { ...this.obj };
         delete newObj[key];
         return new ObjectManipulator(newObj);
     }
 
-    public getObject(): object {
+    public getObject(){
         return this.obj;
     }
 }
