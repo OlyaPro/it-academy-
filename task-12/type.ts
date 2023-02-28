@@ -61,7 +61,7 @@ const persons: Person[] = [
 //task 3
 interface ObjectManipulatorInterface {
     set(key: string, value: string | number): ObjectManipulator;
-    get(key: string): string | number;
+    get(key: string): string;
     delete(key: string): ObjectManipulator;
     getObject(): object;
 }
@@ -74,7 +74,7 @@ export class ObjectManipulator implements ObjectManipulatorInterface {
         return new ObjectManipulator({ ...this.obj, [key]: value });
     }
 
-    public get(key: string): string | number {
+    public get(key: string): string {
         return this.obj[key];
     }
 
