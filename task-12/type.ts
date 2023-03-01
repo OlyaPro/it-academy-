@@ -61,7 +61,7 @@ const persons: Person[] = [
 //task 3
 interface ObjectManipulatorInterface {
     set(key: string, value: string | number): ObjectManipulator;
-    get(key: string): string;
+    get(key: string): string | number;
     delete(key: string): ObjectManipulator;
     getObject(): object;
 }
@@ -104,12 +104,12 @@ export class ObjectManipulator implements ObjectManipulatorInterface {
  * @param {Array} input
  * @return {Array | Function}
  */
-export function map<T>(mapper: Function, input: any): Array<T> | Function {
+export function map(mapper: (value: number, index: number, array: number[]) => number, input: number[]): number[] | Function {
     if (arguments.length === 0) {
         return map;
     }
     if (arguments.length === 1) {
-        return function subFunction<T>(subInput: any): Array<T> | Function {
+        return function subFunction(subInput: number[]): number[] | Function {
             if (arguments.length === 0) {
                 return subFunction;
             }
