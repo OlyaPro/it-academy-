@@ -23,11 +23,7 @@ const users: UserInterface[] = [
 ];
 
 //task 2
-interface UserInterface {
-    name: string;
-    age: number;
-    occupation: string;
-}
+
 interface AdminInterface {
     name: string;
     age: number;
