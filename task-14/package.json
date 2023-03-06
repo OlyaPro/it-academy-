@@ -1,0 +1,22 @@
+{
+  "name": "task-14",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --debug ./test/test.js --fix",
+    "lint:write": "eslint --write ./ --fix",
+    "test": "jest"
+  },
+  "author": "OlyaPro",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0"
+  },
+  "dependencies": {
+    "jest": "^29.4.3",
+    "jest-html-reporter": "^3.7.0"
+  }
+}
