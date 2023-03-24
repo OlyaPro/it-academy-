@@ -83,13 +83,13 @@ const tourPackages = [
         .build(),
 ];
 
-function TourPackageSorter(tourPackages, sortByNameParameter) {
+function tourPackageSorter(tourPackages, sortByNameParameter) {
     const sortedTours = tourPackages.sort((a, b) => a[sortByNameParameter] - b[sortByNameParameter]);
     console.log(sortedTours);
 }
 TourPackageSorter();
 
-function TourPackageFilter(tourPackages, filterByNameParameter, filterByValue) {
+function tourPackageFilter(tourPackages, filterByNameParameter, filterByValue) {
     const filteredTours = [];
     for (let i = 0; i < tourPackages.length; i++) {
         if (tourPackages[i][filterByNameParameter].toUpperCase() === filterByValue.toUpperCase()) {
