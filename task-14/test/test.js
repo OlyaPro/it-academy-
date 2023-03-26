@@ -1,14 +1,8 @@
 const Calculator = require('../calculator');
-
+beforeAll(() => {
+  calculator = new Calculator();
+});
 describe('Calculator', () => {
-  let calculator;
-
-  beforeEach(() => {
-    calculator = new Calculator();
-  });
-  afterEach(() => {
-    calculator = null;
-  });
 
   test.each([
     [[-1, 1], 0],
