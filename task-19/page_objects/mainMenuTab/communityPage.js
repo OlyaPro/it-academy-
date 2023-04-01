@@ -1,5 +1,5 @@
 const BasePage = require('../basePage');
-const topNavigation = require('..//generalComponents/topNavigation');
+const topNavigation = require('../generalComponents/topNavigation');
 
 class CommunityPage extends BasePage {
   sideHeaderDonate() {
