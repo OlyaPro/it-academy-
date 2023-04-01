@@ -1,6 +1,6 @@
 const BasePage = require('../basePage');
 const BaseElements = require('../../helpers/baseElements');
-const topNavigation = require('..//generalComponents/topNavigation');
+const topNavigation = require('../generalComponents/topNavigation');
 
 
 class ApiPage extends BasePage {
