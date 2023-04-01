@@ -5,9 +5,6 @@ describe('webdriver.io test', () => {
     await browser.url('https://webdriver.io/');
   });
 
-  after(async () => {
-    await browser.closeWindow();
-  });
   it('should check that the side menu contains the word "Donate" in the main header "Community"', async () => {
     await $("//*[@class='navbar__items']/a[position()=6]").click();
     expect(await $("//*[@href='/community/donate']").getText()).to.contain('Donate');
