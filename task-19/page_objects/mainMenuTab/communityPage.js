@@ -1,5 +1,5 @@
 const BasePage = require('../basePage');
-<<<<<<< HEAD
+<<<<<<< HE
 
 =======
 const topNavigation = require('../generalComponents/topNavigation');
