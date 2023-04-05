@@ -1,6 +1,6 @@
 const BasePage = require('../basePage');
 const BaseElements = require('../../helpers/baseElements');
-const topNavigation = require('..//generalComponents/topNavigation');
+
 
 
 class ApiPage extends BasePage {
@@ -17,7 +17,7 @@ class ApiPage extends BasePage {
     }
 
     async searchsubtitleInSideMenu(subtitle) {
-        await topNavigation.goToAPI();
+        
         await this.goToProtocols();
         return this.appiumSubHeader().getText();
     }

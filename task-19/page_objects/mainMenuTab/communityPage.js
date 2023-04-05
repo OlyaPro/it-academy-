@@ -1,5 +1,5 @@
 const BasePage = require('../basePage');
-const topNavigation = require('..//generalComponents/topNavigation');
+
 
 class CommunityPage extends BasePage {
   sideHeaderDonate() {
@@ -7,7 +7,7 @@ class CommunityPage extends BasePage {
   }
 
   async searchtextInSideMenu(text) {
-    await topNavigation.goToCommunity();
+    
     return this.sideHeaderDonate().getText();
   }
 }

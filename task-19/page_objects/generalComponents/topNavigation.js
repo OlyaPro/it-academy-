@@ -28,15 +28,13 @@ class TopNavigation extends BasePage {
     return $("//*[@class='DocSearch-Hit']/a/div");
   }
 
-  titleDocument() {
-    return $("//h1[text()='Automation Protocols']");
-  }
+
 
   async searchDocumentOnRequest(docName) {
     await BaseElements.click(this.searchField);
     await this.searchInput.setValue(docName);
     await BaseElements.click(this.SearchDocument);
-    return this.titleDocument().getTitle()
+    
 
   }
 
