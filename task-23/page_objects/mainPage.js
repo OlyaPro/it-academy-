@@ -9,7 +9,7 @@ exports.MainPage = class MainPage {
         await this.page.goto(url);
     }
 
-    ItemPromAndDiscPageInSideNavMenu() {
+    get ItemPromAndDiscPageInSideNavMenu() {
         return 'li.main-nav__list__li:nth-child(1) > a'
 
     }

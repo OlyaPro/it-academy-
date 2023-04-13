@@ -1,6 +1,6 @@
 exports.PromAndDiscPage = class PromAndDiscPage {
 
-    header() {
+    get header() {
         return '.landing-header__title';
 
     }

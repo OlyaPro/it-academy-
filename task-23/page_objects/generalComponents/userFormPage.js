@@ -15,11 +15,11 @@ exports.UserFormPage = class UserFormPage {
         await this.page.getByRole('button', { name: 'Зарегистрироваться и войти' }).click();
 
     };
-    errorMessageAboutPhoneNumber() {
+    get errorMessageAboutPhoneNumber() {
         return 'div.i-input-group__popover_visible #test>div.i-popover__main>div';
     };
 
-    messageAboutReRegistration() {
+    get messageAboutReRegistration() {
         return '//div[@class="i-popover__line"][contains(text(), "Этот номер уже зарегистрирован")]';
     };
 

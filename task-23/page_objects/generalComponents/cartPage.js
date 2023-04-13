@@ -15,7 +15,7 @@ exports.CartPage = class CartPage {
 
     };
 
-    productInTheCart() {
+    get productInTheCart() {
         return "a[class='goods-table-cell__line goods-table-cell__line_title']";
 
     };

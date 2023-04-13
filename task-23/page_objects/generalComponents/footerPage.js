@@ -8,7 +8,7 @@ exports.FooterPage = class FooterPage {
         return await this.page.waitForSelector(this.footer);
     };
 
-    footerLinksCount() {
+    get footerLinksCount() {
         return '.footer-full__nav li>a:nth-child(1)';
     }
 };

@@ -4,22 +4,22 @@ exports.TopNavigationPage = class TopNavigationPage {
         this.searchBtnItem = '.top-panel__search__btn__item';
     };
 
-    linkToTheBonusProgram() {
+    get linkToTheBonusProgram() {
         return "li:nth-child(7) a[href*='/bonus']";
     };
-    callbackForm() {
+    get callbackForm() {
         return "[onclick='PhoneCall.open(); return false;']";
     };
 
-    formLogin() {
+    get formLogin() {
         return '.top-panel__userbar__auth__lbl';
     };
 
-    shoppingCart() {
+    get shoppingCart() {
         return '.top-panel__userbar__cart__item u';
     };
 
-    NumberNextFavoritesNav() {
+    get NumberNextFavoritesNav() {
         return 'top-panel__userbar__favs__count'
     };
     async searchProducts(product) {
