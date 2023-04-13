@@ -133,7 +133,7 @@ test.describe('test oz.by website', async function () {
     await expect(image).toBeTruthy();
   });
 
-  test('Should check the number next to the "Favourites" navigation', async () => {
+  test('Should check the product counter next to the Favorites navigation', async () => {
     await baseElements.click(topNavigation.formLogin());
     await userForm.loginByEmailAndPass();
     await topNavigation.searchProducts('Подарочный набор "Кот"');
