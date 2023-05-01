@@ -7,7 +7,7 @@ exports.ProductListingPage = class ProductListingPage {
     };
   }
 
-  async getproduct(nameOfProduct) {
+  async getProduct(nameOfProduct) {
     const productSelector = await this.productName(nameOfProduct);
     await this.page.waitForSelector(productSelector);
     await this.page.isEnabled(productSelector);

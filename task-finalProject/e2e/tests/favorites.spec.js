@@ -29,7 +29,7 @@ test.describe('test favorites oz.by website', async function () {
     await baseElements.click(topNavigation.formLogin);
     await userForm.loginByEmailAndPass();
     await topNavigation.searchProducts('Подарочный набор "Кот"');
-    await productListing.getproduct('Подарочный набор "Кот"');
+    await productListing.getProduct('Подарочный набор "Кот"');
     await productDetails.checkFavoriteItemsCounter();
     const numberNearFavoriteNav = await baseElements.checkTextContent(await topNavigation.numberNextFavoritesNav);
     await expect(numberNearFavoriteNav).toEqual('0');
