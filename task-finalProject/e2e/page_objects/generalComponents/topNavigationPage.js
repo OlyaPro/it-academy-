@@ -3,7 +3,7 @@ exports.TopNavigationPage = class TopNavigationPage {
     constructor(page) {
         this.page = page;
         this.searchBtnItem = '.top-panel__search__btn__item';
-
+        this.userName = '.top-panel__userbar__user__name__inner';
     };
 
     get linkToTheBonusProgram() {
@@ -22,7 +22,7 @@ exports.TopNavigationPage = class TopNavigationPage {
     };
 
     get numberNextFavoritesNav() {
-        return '.top-panel__userbar__favs__count' 
+        return '.top-panel__userbar__favs__count'
     };
     async searchProducts(product) {
         const searchField = await this.page.getByPlaceholder('Введите название товара');
@@ -30,6 +30,6 @@ exports.TopNavigationPage = class TopNavigationPage {
         const searchBtnItem = await this.page.waitForSelector(this.searchBtnItem);
         await searchBtnItem.click();
 
-    };     
-    
     };
+
+};

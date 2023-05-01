@@ -4,17 +4,17 @@ exports.BaseElements = class BaseElements {
         this.page = page;
     }
 
-    async click(selectorOrElement) {
-        await this.page.waitForSelector(selectorOrElement)
-        await this.page.click(selectorOrElement);
+    async click(selector) {
+        await this.page.waitForSelector(selector)
+        await this.page.click(selector);
     }
 
-    async checkTextContent(selectorOrElement) {
-        return await this.page.textContent(selectorOrElement);
+    async checkTextContent(selector) {
+        return this.page.textContent(selector);
     };
 
-    async getText(selectorOrElement) {
-        return await this.page.getByText(selectorOrElement);
+    async getText(selector) {
+        return this.page.getByText(selector);
     };
 
 }

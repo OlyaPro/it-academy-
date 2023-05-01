@@ -10,7 +10,8 @@
         "airbnb-base",
         "eslint:recommended",
         "plugin:import/errors",
-        "plugin:import/warnings"
+        "plugin:import/warnings",
+        "prettier"
     ],
     "rules": {
         "no-async-promise-executor": "off",
@@ -110,7 +111,8 @@
         },
         "plugins": [
             "import",
-            "playwright"
+            "playwright",
+            "prettier"
         ]
     },
     "globals": {

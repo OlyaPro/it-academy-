@@ -16,7 +16,7 @@ test.describe('test promoDiscountPage oz.by website', async function () {
   });
 
   test('Should open the "Акции и скидки" page', async () => {
-    await baseElements.click(mainPage.ItemPromAndDiscPageInSideNavMenu);
+    await baseElements.click(mainPage.itemPromAndDiscPageInSideNavMenu);
     const titlePromAndDiscPage = await baseElements.checkTextContent(promotionsAndDiscounts.header);
     await expect(titlePromAndDiscPage).toContain('Акции и скидки');
   });
