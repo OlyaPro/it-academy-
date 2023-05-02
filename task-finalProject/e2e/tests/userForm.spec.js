@@ -21,7 +21,7 @@ test.describe('test userFormPage oz.by website', async function () {
   });
   test('Registration form should show error message on invalid input', async () => {
     await baseElements.click(topNavigation.formLogin);
-    await userForm.registerByPhoneNumber('173999999');
+    await userForm.registerByPhoneNumber('174999999');
     const messageAboutNumberPhone = await baseElements.checkTextContent(userForm.errorMessageAboutPhoneNumber);
     await expect(messageAboutNumberPhone).toBe('Введите номер мобильного телефона белорусских операторов');
   });
